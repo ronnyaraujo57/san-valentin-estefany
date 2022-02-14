@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.none {
+    display: none;
+}
+.h1_animation {
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+    animation-name: opacidad;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.center {
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    height: 400px;
+    magin:0px;
+}
+
+.corazon_latir {
+    position: absolute;
+    display: block;
+    width: 100%;
+    animation: latir infinite 1.5s linear;
+}
+
+.img_animation {
+    display: flex;
+    flex-direction: unset;
+    width: 25%;
+    padding: 2px;
+    border-radius: 10px;
+    animation-name: opacidad, latir;
+    animation-iteration-count: 1, infinite;
+    animation-duration: 8s, 1.5s;
+    animation-delay: 0s, 8s;
+}
+
+#frame #group {
+    position: absolute;
+}
+
+
+
+@keyframes opacidad {
+    0% {
+        transition: 3s;
+        opacity: 0.0;
+    }
+    /* 50% {
+        transition: 3s;
+        opacity: 0.5;
+    } */
+    100% {
+        transition: 3s;
+        opacity: 1;
+    }
+}
+
+@keyframes latir {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.02, 1.02);
+    }
+    55% {
+        transform: scale(0.95, 0.95);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.btn {
+    display: block;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    width: 120px;
+    transition: 300ms all;
+    border-radius: 10px;
+
+    background: rgba(248,80,50,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 18%, rgba(246,41,12,1) 66%, rgba(240,47,23,1) 73%, rgba(231,56,39,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(248,80,50,1)), color-stop(18%, rgba(241,111,92,1)), color-stop(66%, rgba(246,41,12,1)), color-stop(73%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 18%, rgba(246,41,12,1) 66%, rgba(240,47,23,1) 73%, rgba(231,56,39,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 18%, rgba(246,41,12,1) 66%, rgba(240,47,23,1) 73%, rgba(231,56,39,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 18%, rgba(246,41,12,1) 66%, rgba(240,47,23,1) 73%, rgba(231,56,39,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 18%, rgba(246,41,12,1) 66%, rgba(240,47,23,1) 73%, rgba(231,56,39,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+
+}
+
+.btn:hover {
+    background: black;
+}

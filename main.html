@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+  </head>
+  <body>
+      <div class="center">
+        <input id="btn-play" class="btn" type="button" value="Play" onclick="play()"/>
+      </div>    
+    <script type="text/javascript">
+        function play() {
+            document.getElementById("btn-play").classList.remove("btn");
+            document.getElementById("btn-play").classList.add("none");
+            document.getElementById("msj").classList.remove("none");
+            document.getElementById("frame").classList.remove("none");
+            document.getElementById("msj").classList.add("h1_animation");
+            document.getElementById("frame").classList.add("center");
+            document.getElementById("corazon").classList.add("corazon_latir");
+            document.getElementById("photo1").classList.add("img_animation");
+            document.getElementById("photo2").classList.add("img_animation");
+        }
+    </script>
+    <h1 id="msj" class="none">Feliz San Valentin</h1>
+    <div id="frame" class="none">
+        <img id="corazon"class="" src="image/corazon.png" alt="animacion"/>
+        <div id="group" class="center">
+            <img id="photo1" class="" src="image/ronny.jpg" alt="animacion"/>
+            <img id="photo2" class="" src="image/estefany.jpg" alt="animacion"/>
+            <!-- <img src="https://scontent.fhex3-1.fna.fbcdn.net/v/t39.30808-6/254693524_4874606052591867_5994611876119343338_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFp72jsdLsMQ-yQ8_GfxnziLo2BGYN5GqEujYEZg3kaoSK4ccEXjWqoQx-ebKKSAj2LyHxRSArvQ8Tvr924fXQ7&_nc_ohc=U1o-o3A3OqMAX-HGfhI&_nc_zt=23&_nc_ht=scontent.fhex3-1.fna&oh=00_AT-703CYil-Rb7dLTWJzaGb4cjoRvbwy0eY4TTyXYCSaSQ&oe=620F0671" alt="animacion"/> -->
+            <!-- <img src="https://scontent.fhex3-1.fna.fbcdn.net/v/t39.30808-6/273651462_3008131359502430_5148854319509564082_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEgK4I_9Kp1kQr3dWvW880LSuZz1X0qGcxK5nPVfSoZzOzpSjhybWrz4NKrGl8Itlrm4ZUipJ5KC0PY7FvGAL1h&_nc_ohc=_-XyzU-jo2IAX9452yp&_nc_zt=23&_nc_ht=scontent.fhex3-1.fna&oh=00_AT_jXEfZQLjv-UMLqjd1CF-c8HNa4dlhyTX_ivH3e_rB0A&oe=620ED526" alt="animacion"/> -->
+        </div>
+    </div>
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
