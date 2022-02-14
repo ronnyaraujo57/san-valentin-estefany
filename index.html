@@ -5,13 +5,15 @@
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
   </head>
   <body>
-      <div class="center">
+      <div id="div-button" class="center">
         <input id="btn-play" class="btn" type="button" value="Play" onclick="play()"/>
-      </div>    
+      </div>
     <script type="text/javascript">
         function play() {
             document.getElementById("btn-play").classList.remove("btn");
             document.getElementById("btn-play").classList.add("none");
+            document.getElementById("div-button").classList.add("none");
+            document.getElementById("div-button").classList.remove("center");
             document.getElementById("msj").classList.remove("none");
             document.getElementById("frame").classList.remove("none");
             document.getElementById("msj").classList.add("h1_animation");
